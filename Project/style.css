@@ -22,6 +22,7 @@ body {
   flex: 1;
   text-align: center;
   font-family: Arial, sans-serif;
+  color: white;
 }
 
 h1, p, span {
@@ -30,7 +31,6 @@ h1, p, span {
 
 h1 {
   background-color: #3498db;
-  border: 2px dotted blue;
   padding: 10px 15px;
   width: 250px;
   margin: 60px auto 20px;
