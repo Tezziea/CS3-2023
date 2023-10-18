@@ -30,7 +30,7 @@ h1, p, span {
 }
 
 h1 {
-  background-color: #3498db;
+  background: linear-gradient(to right, yellow, blue, red, white);
   padding: 10px 15px;
   width: 250px;
   margin: 60px auto 20px;
