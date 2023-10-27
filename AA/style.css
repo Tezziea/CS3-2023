@@ -1,0 +1,32 @@
+body {
+            background-image: url('your_background_image.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            text-align: center;
+        }
+        
+        div {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        span {
+            display: block;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            border: 2px solid black;
+            border-radius: 5px;
+            background: #fff;
+        }
