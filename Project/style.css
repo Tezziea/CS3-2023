@@ -39,11 +39,13 @@ h1 {
 .lower-left-h1 {
   text-align: left;
   margin-top: 10px; /* Slightly lower than the first h1 */
+  float: left; /* Align to the left */
 }
 
 .lower-right-h1 {
   text-align: right;
   margin-top: 10px; /* Slightly lower than the first h1 */
+  float: right; /* Align to the right */
 }
 
 p {
