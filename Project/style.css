@@ -23,12 +23,9 @@ h1, .lower-left-h1, .lower-right-h1 {
   text-align: left;
   margin-top: 10px;
   float: left;
+  color: white;
 }
 
-.lower-right-h1 {
-  text-align: right;
-  margin-top: 10px;
-  float: right;
 }
 
 /* Your existing style for p here */
@@ -39,10 +36,4 @@ span {
   color: white;
   margin: 2px 5px;
   font-family: 'Poppins Medium', poppins-medium;
-}
-
-.right-span {
-  float: right;
-  font-family: 'Poppins Medium', poppins-medium;
-  color: white;
 }
