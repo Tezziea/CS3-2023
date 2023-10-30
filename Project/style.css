@@ -1,9 +1,5 @@
 body {
-  background-image: url('pinoyplatesbg.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+  background-color: white; /* Change the background color to white */
   margin: 0;
   padding: 0;
   font-family: 'Poppins Medium', poppins-medium; /* Set the font for the entire page */
@@ -31,33 +27,33 @@ body {
 }
 
 h1 {
-  background: linear-gradient(to right, yellow, blue, red, white);
-  padding: 10px 15px;
-  width: 250px;
-  margin: 60px auto 20px;
+  color: #2B35AF; /* Change the color of h1 to match the header */
+  padding: 10px;
+  margin: 60px auto; /* Center h1 horizontally and add some margin */
   font-family: 'Poppins Medium', poppins-medium; /* Set the font for h1 */
+}
+
+.main-content {
+  display: grid; /* Use grid layout for the main content */
+  grid-template-columns: repeat(3, auto); /* Divide the main content into three columns */
+}
+
+.about-us {
+  grid-column: span 3; /* Make the about us section span three columns */
+}
+
+.title {
+  grid-column: span 2; /* Make the title section span two columns */
+}
+
+.description {
+  
+}
+
+img {
+  width: 100%; /* Make the image fit its container */
 }
 
 p {
   padding: 20px;
-  background-color: hsl(120, 50%, 50%);
-  border: none; /* Remove the borders */
-  width: 500px;
-  font-style: italic;
-  margin: 0 auto 20px;
-  font-family: 'Poppins Medium', poppins-medium; /* Set the font for p */
-}
-
-span {
-  font-weight: bold;
-  font-style: italic;
-  color: rgb(255, 0, 0);
-  margin: 2px 5px;
-  font-family: 'Poppins Medium', poppins-medium;
-}
-
-.right-span {
-  float: right;
-  font-family: 'Poppins Medium', poppins-medium;
-  color: white;
 }
