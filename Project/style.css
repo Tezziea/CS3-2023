@@ -59,3 +59,9 @@ span {
   font-family: 'Poppins Medium', poppins-medium;
   color: white;
 }
+
+.side-title {
+  font-weight: normal;
+  color: #2B35AF;
+  margin-right: 5px;
+}
