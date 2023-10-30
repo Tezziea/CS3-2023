@@ -22,7 +22,12 @@ body {
 .top-bar-item {
   flex: 1;
   text-align: center;
-  color: white; /* Change the color to white */
+}
+
+.top-bar-item a {
+  color: white; /* Change the color of the links to white */
+  text-decoration: none; /* Remove the underline for links */
+  font-family: 'Poppins Medium', poppins-medium; /* Set the font for links */
 }
 
 h1 {
