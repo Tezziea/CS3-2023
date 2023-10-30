@@ -33,7 +33,17 @@ body {
 h1 {
   width: 250px;
   margin: 60px auto 20px;
-  font-family: 'Poppins Medium', poppins-medium; /* Set the font for h1 */
+  font-family: 'Poppins Medium', poppins-medium; /* Set the font for the first h1 */
+}
+
+.lower-left-h1 {
+  text-align: left;
+  margin-top: 10px; /* Slightly lower than the first h1 */
+}
+
+.lower-right-h1 {
+  text-align: right;
+  margin-top: 10px; /* Slightly lower than the first h1 */
 }
 
 p {
