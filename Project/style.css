@@ -62,11 +62,10 @@ span {
   color: rgb(255, 0, 0);
   margin: 2px 5px;
   font-family: 'Poppins Medium', poppins-medium;
-  float: left; /* Align the normal span to the most left */
 }
 
 .right-span {
+  float: right;
   font-family: 'Poppins Medium', poppins-medium;
   color: white;
-  float: right; /* Align the .right-span to the most right */
 }
