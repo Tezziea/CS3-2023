@@ -55,3 +55,9 @@ span {
   margin: 2px 5px;
   font-family: 'Poppins Medium', poppins-medium;
 }
+
+.right-span {
+  float: right;
+  font-family: 'Poppins Medium', poppins-medium;
+  color: white;
+}
