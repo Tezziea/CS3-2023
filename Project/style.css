@@ -31,8 +31,6 @@ body {
 }
 
 h1 {
-  background: linear-gradient(to right, yellow, blue, red, white);
-  padding: 10px 15px;
   width: 250px;
   margin: 60px auto 20px;
   font-family: 'Poppins Medium', poppins-medium; /* Set the font for h1 */
