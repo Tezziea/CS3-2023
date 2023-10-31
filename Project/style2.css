@@ -36,6 +36,7 @@ h1 {
   margin: 60px auto 20px;
   font-family: poppins; /* Set the font for the first h1 */
   color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.2); /* Black background with 20% opacity */
 }
 
 .lower-left-h1 {
@@ -43,7 +44,7 @@ h1 {
   margin-top: 10px; /* Slightly lower than the first h1 */
   float: left; /* Align to the left */
   color: rgb(255, 255, 255);
-  background-color: rgba(0, 0, 0, 0.2); /* Black background with 20% opacity */
+  background-color: rgba(0, 0, 0, 0.1); /* Black background with 20% opacity */
   font-family: 'Poppins Medium', poppins-medium; /* Set the font for lower-left h1 */
 } 
 
