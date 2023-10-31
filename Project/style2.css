@@ -17,6 +17,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  font-family: 'Poppins Medium', poppins-medium; /* Set the font for the top bar */
 }
 
 .top-bar-item {
@@ -33,7 +34,7 @@ body {
 h1 {
   width: 250px;
   margin: 60px auto 20px;
-  font-family: 'Poppins Medium', poppins-medium; /* Set the font for the first h1 */
+  font-family: poppins; /* Set the font for the first h1 */
   color: rgb(255, 255, 255);
 }
 
@@ -43,6 +44,7 @@ h1 {
   float: left; /* Align to the left */
   color: rgb(255, 255, 255);
   background-color: rgba(0, 0, 0, 0.2); /* Black background with 20% opacity */
+  font-family: 'Poppins Medium', poppins-medium; /* Set the font for lower-left h1 */
 } 
 
 p {
@@ -61,5 +63,5 @@ span {
   font-style: italic;
   color: rgb(255, 255, 255);
   margin: 2px 5px;
-  font-family: 'Poppins Medium', poppins-medium;
+  font-family: poppins;
 }
