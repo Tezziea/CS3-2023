@@ -31,6 +31,30 @@ body {
   font-family: 'Poppins Medium', poppins-medium; /* Set the font for links */
 }
 
+.contact-box {
+  background-color: #6A97FF; /* Background color for the box */
+  border-radius: 15px; /* Adds smooth corners to the box */
+  padding: 20px;
+  width: 300px; /* Adjust the width as needed */
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Poppins Medium', poppins-medium;
+  color: white;
+}
+
+.contact-box h2 {
+  font-size: 24px; /* Title font size */
+}
+
+.contact-box p {
+  font-size: 16px; /* Description font size */
+}
+
+.contact-box a {
+  color: white;
+  text-decoration: underline;
+}
+
 h1 {
   width: 250px;
   margin: 60px auto 20px;
