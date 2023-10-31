@@ -42,6 +42,7 @@ h1 {
   margin-top: 10px; /* Slightly lower than the first h1 */
   float: left; /* Align to the left */
   color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.2); /* Black background with 20% opacity */
 } 
 
 p {
