@@ -62,3 +62,18 @@ span {
   margin: 2px 5px;
   font-family: 'Poppins Medium', poppins-medium;
 }
+
+.vertical-paragraph {
+  background-color: hsl(120, 50%, 50%);
+  border: none;
+  width: 250px; /* Adjust the width as needed */
+  font-style: italic;
+  font-family: 'Poppins Medium', poppins-medium;
+  color: rgb(255, 255, 255);
+  margin: 0 auto 20px;
+  padding: 20px; /* Adjust the padding as needed */
+}
+
+.vertical-paragraph p {
+  margin: 10px 0; /* Add spacing between paragraphs */
+}
