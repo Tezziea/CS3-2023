@@ -32,22 +32,22 @@ body {
 }
 
 .contact-box {
-  background-color: #6A97FF; /* Background color for the box */
-  border-radius: 15px; /* Adds smooth corners to the box */
+  background-color: #6A97FF;
+  border-radius: 15px;
   padding: 20px;
-  width: 300px; /* Adjust the width as needed */
-  margin: 0 auto;
+  width: 400px; /* Make the box wider */
+  margin: 20px auto; /* Lower the box by increasing the top margin */
   text-align: center;
   font-family: 'Poppins Medium', poppins-medium;
   color: white;
 }
 
 .contact-box h2 {
-  font-size: 24px; /* Title font size */
+  font-size: 28px; /* Increase the title font size */
 }
 
 .contact-box p {
-  font-size: 16px; /* Description font size */
+  font-size: 18px; /* Increase the description font size */
 }
 
 .contact-box a {
