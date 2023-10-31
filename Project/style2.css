@@ -48,6 +48,11 @@ h1 {
   font-family: 'Poppins Medium', poppins-medium; /* Set the font for lower-left h1 */
 } 
 
+/* Increase the font size for the "Get in touch" h1 */
+h1.lower-left-h1 {
+  font-size: 36px; /* Adjust the font size as needed */
+}
+
 p {
   background-color: rgba(0, 0, 0, 0.2); /* Black background with 20% opacity */
   border: none; /* Remove the borders */
