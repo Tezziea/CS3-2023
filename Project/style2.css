@@ -35,7 +35,7 @@ body {
   background-color: #6A97FF;
   border-radius: 15px;
   padding: 20px;
-  width: 400px; /* Make the box wider */
+  width: 600px; /* Make the box wider */
   margin: 30px auto; /* Lower the box by increasing the top margin */
   text-align: center;
   font-family: 'Poppins Medium', poppins-medium;
