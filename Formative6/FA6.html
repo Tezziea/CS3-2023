@@ -1,28 +1,108 @@
 <!DOCTYPE html>
 <html>
-<head>
- <style>
-    a { text-decoration: none; }
+    <!DOCTYPE html>
+<html lang = en>
+    <head>
+        <title>Formative Assessment 6</title>
+    </head>
 
-    a:link { color: red; 
-            background-color: 
-            white; }
-    a:visited { color: blue; 
-               background-color: 
-               lightgrey; }
-    a:active { color: yellow; 
-              background-color: 
-              cyan; }
+    <style>
 
-    div:target { border: 2px dotted green; }
- </style>
-</head>
-<body>
+        *{
+            text-decoration: none;
+        }
+        
+        #a1:link{
 
-<a href="#">click to change color</a>
-<br>
-<div id="first">first div</div>
-<br>
+            border: 2px solid black;
+            border-radius: 15%;
+            background: gold;
+            padding: 0.5%;
+            margin: 5%;
+            color: white;
+        }
 
-</body>
+        #a1:visited{
+            border-radius: 15%;
+            background-color: goldenrod;
+            margin: 5%;
+            color: white;
+        }
+        
+        #a1:hover{
+            background-color: gainsboro;
+            color: white;
+    
+        }
+
+        #a1:active{
+            background-color: gray;
+            color: white;
+        }
+        
+
+        #a2:link{
+            border: 1px solid black;
+            border-radius: 15%;
+            background:blanchedalmond;
+            padding: 0.5%;
+            margin: 5%;
+            color: white;
+        }
+        #a2:visited{
+            background: burlywood;
+            color: white;
+        }
+
+        #a2:hover{
+            background:bisque;
+            color: white;
+        }
+
+        #a2:active{
+            background: brown;
+            color: white;
+        }
+
+        #div1{
+            width: 15%;
+            padding-bottom: 8%;
+            height: 8%;
+            border: 2px solid black;
+            color: white;
+        }
+        #div1:target{
+            background: red;
+            color: white;
+
+        }
+
+        #div2{
+            margin-top: 5%;
+            width: 15%;
+            padding-bottom: 8%;
+            height: 8%;
+            border: 2px solid black;
+            color: white;
+        }
+
+        #div2:target{
+            background: lightgreen;
+            border: 10px solid green;
+            border-style: dotted;
+            color: white;
+        }
+
+    </style>
+
+    <body>
+            <a id = "a1" href = "#div1"> First Link</a>  
+            <a id = "a2" href = "#div2"> Second Link</a>
+            <br>
+            <br>
+            <br>
+            <div id = "div1"> Div 1</div>
+            <div id = "div2"> Div 2</div>
+    </body>
+</html>
 </html>
