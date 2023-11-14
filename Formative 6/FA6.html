@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+    a { text-decoration: none; }
+
+    a:link { color: red; background-color: white; }
+    a:visited { color: blue; background-color: lightgrey; }
+    a:hover { color: green; background-color: black; }
+    a:active { color: yellow; background-color: cyan; }
+
+    div:target { border: 2px dotted green; }
+ </style>
+</head>
+<body>
+
+<a href="#">Click here to change the background color and text color of the first div</a>
+<br>
+<div id="first">This is the first div</div>
+<br>
+<a href="#second">Click here to change the border of the second div</a>
+<br>
+<div id="second">This is the second div</div>
+
+</body>
+</html>
