@@ -63,3 +63,22 @@ span {
   margin: 2px 5px;
   font-family: 'Poppins Medium', poppins-medium;
 }
+
+.content-box {
+  border: 5px solid #000;
+  padding: 20px;
+  margin: 10px;
+  width: 30%;
+  background-color: rgba(255, 255, 255, 0.9); /* added semi-transparent white background color */
+  border-radius: 10px; /* added rounded edges */
+  }
+   
+  .content-box-title {
+  margin-top: 10px;
+  color: black; /* changed the text color to black */
+  }
+   
+  .content-box-content {
+  margin-bottom: 0;
+  color: black; /* changed the text color to black */
+  }
