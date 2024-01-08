@@ -81,6 +81,7 @@ span {
   .content-box-content {
   margin-bottom: 0;
   color: black; /* changed the text color to black */
+  width: 15%;
   }
 
   .top-left-button-1 {
