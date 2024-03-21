@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>One Time Password </title>
+        <style>
+        	body {background: lightblue; 
+            	text-align: center;
+            	font-family: arial;
+                color: navy;
+            }
+            button {padding: 10px; background:violet }
+            a {font-size: 0.5em; color: maroon}
+        </style>
+
+	</head>
+	<body onload="otp()">
+	<h1> Final Verification Step </h1>
+	<h2> Current OTP: <span id="otp"> _ _ _ _ _ _ </span> <a onclick="otpnew()" href=""> New OTP </a></h2>
+    <button onclick="otpcheck()"> Enter the OTP as shown above </button>
+	
+    
+	<script>
+		function otp(){
+			let otp = Math.floor(100000 + Math.random() * 900000);
+			document.getElementById("otp").innerHTML = otp;
+		}
+		    function otpnew(){
+			    otp();
+		}
+		        function otpcheck(){
+			        let userotp = prompt("Please enter the OTP");
+			        if(userotp != document.getElementById("otp").innerHTML){
+				        alert("OTP is incorrect");
+				        otpnew();
+			}
+			        else{
+				        window.open("https://www.facebook.com");
+			}
+		}
+	</script>
+</body>
+</html>
