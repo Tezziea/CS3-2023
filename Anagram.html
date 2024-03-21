@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Anagram
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                background-color: rgb(32, 178, 51);
+            }
+           
+        </style>
+    </head>
+    <body>
+        <h4 id="result"></h4>
+        <script>
+            function anagram(X, Y) {
+                X = X.replace(/ /g, '').toLowerCase();
+                Y = Y.replace(/ /g, '').toLowerCase();
+
+                if (X.length !== Y.length) {
+                    return false;
+    }
+                var count = {};
+                for (var char of X) {
+                count[char] = (count[char] || 0) + 1;
+    }
+                for (var char of Y) {
+                if (!count[char]) {
+                    return false;
+            }
+                count[char]--;
+    }
+                for (var char in count) {
+                if (count[char] !== 0) {
+                    return false;
+        }
+    }
+
+    return true;
+}
+
+
+var x = prompt("Enter the first word or phrase:");
+var y = prompt("Enter the second word or phrase:");
+
+if (anagram(x, y)) {
+    alert("The two words are an anagram.");
+} else {
+    alert("The two words are not an anagram.");
+}
+        </script>
+    </body>
+</html>
