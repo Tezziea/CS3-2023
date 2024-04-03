@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Multiplication table</title>
+
+        <style>
+            table{
+                border: 2px solid white;
+            }
+
+            tr, td{
+                border: 2px solid black;
+                padding: 10px;
+                text-align: center;
+                font-size: 115%;
+                font-family:'Times New Roman', Times, serif;
+            }
+        </style>
+	</head>
+
+	<body>
+
+        
+	<script>
+       function timestable(){
+        var n = parseInt(prompt("Please enter values of n between 2 and 10: "));
+        var m = parseInt(prompt("Please enter values of m between 2 and 10: "));
+
+        while(n<2 || n>10 || m<2 || m>10 || isNaN(n) || isNaN(m)){
+            n = parseInt(prompt("Please enter values of n between 2 and 10: "));
+            m = parseInt(prompt("Please enter values of m between 2 and 10: "));
+         
+        }
+
+        var t = "<table>";
+
+        for(var i = 1; i<=n; i++){
+            t += "<tr>";
+            for(var j = 1; j<=m; j++){
+                t += "<td>" + (i * j) + "</td>";
+            }
+                t += "</tr>";
+        }
+
+        t += "</table>";
+
+        document.write(t);
+       }
+       timestable()
+    </script>
+
+</body>
+</html>
