@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Website Sign-up</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+form {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #4CAF50;
+}
+
+input:invalid, select:invalid, textarea:invalid {
+    border-color: #f44336;
+}
+
+input[type="submit"], input[type="reset"] {
+    width: auto;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #45a049;
+}
+
+#output {
+    margin-top: 20px;
+}
+    </style>
+</head>
+<body>
+
+<form id="signupForm">
+    <fieldset>
+        <legend>Sign Up</legend>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" required>
+        
+        <label for="username">Preferred Username:</label>
+        <input type="text" id="username" required>
+        
+        <label for="gender">Gender:</label>
+        <select id="gender" required>
+            <option value="" disabled selected>Select gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="prefer not to mention">Prefer not to mention</option>
+        </select>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        
+        <label for="emailAddress">Email Address:</label>
+        <input type="email" id="emailAddress" required>
+        
+        <label for="address">Address:</label>
+        <textarea id="address" rows="4" required></textarea>
+        
+        <label for="interests">Interests:</label>
+        <textarea id="interests" rows="4" required></textarea>
+    </fieldset>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</form>
+
+<div id="output"></div>
+
+<script>
+    const form = document.getElementById("signupForm");
+const outputDiv = document.getElementById("output");
+
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    outputDiv.innerHTML = ""; // Clear previous output
+
+    const formData = new FormData(form);
+    let outputText = "<h2>Sign-Up Details</h2>";
+    formData.forEach((value, key) => {
+        outputText += `<p><strong>${key.charAt(0).toUpperCase()}${key.slice(1)}:</strong> ${value}</p>`;
+    });
+    outputDiv.innerHTML = outputText;
+});
+
+form.addEventListener("reset", () => {
+    outputDiv.innerHTML = ""; // Clear output on form reset
+});
+
+// Simplified validation function
+function validateInput(element) {
+    element.style.borderColor = element.value.trim() ? "#4CAF50" : "#f44336";
+}
+
+// Add event listeners for validation
+form.querySelectorAll("input, select, textarea").forEach((element) => {
+    element.addEventListener("blur", () => validateInput(element));
+    element.addEventListener("focus", () => element.style.borderColor = "");
+});
+</script>
+</body>
+</html>
