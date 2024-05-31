@@ -1,0 +1,51 @@
+82% of storage used … If you run out, you can't create, edit and upload files.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="game.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-s0g9ka7KlpGpKMuZWX/NC5M5SsBzBcBgDU8K6l4lFr60TuvW0X3v0Cz7EqwMFsM8YLDaiwDZST0lL7EC7B0v3w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Flappy Bird</title>
+  </head>
+  <body>
+    <h1 id="header">Manok Ni San Pedro</h1>
+    <button id="restart" class="restart-button">
+      ↻ Restart
+    </button>
+    <h1 id="game-over">GAME OVER!</h1>    
+    <div id="game">
+      <div id="pipes"></div>
+    </div>
+    <div class="scores">
+      <div class="player">
+        <h1 id="player-name"></h1>
+        <h2 id="score"></h2>
+        <h2 id="high_score"></h2>
+      </div>
+    </div>
+	<script type="text/javascript">
+	atOptions = {
+		'key' : '8b9dde6893d6567021bbb08a45316f4e',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="www.topcreativeformat.com/8b9dde6893d6567021bbb08a45316f4e/invoke.js"></scr' + 'ipt>');
+</script>
+  </body>
+  <script>
+    const restartBtn = document.getElementById("restart");
+
+    restartBtn.addEventListener("click", () => {
+      bird.kill();
+      start();
+    });
+  </script>
+
+  <audio id="jumpSound" src="./assets/jump.mp3"></audio>
+  <audio id="gameOverSound" src="./assets/game_over.mp3"></audio>
+</html>
