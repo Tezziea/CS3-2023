@@ -20,6 +20,9 @@ function randomNumber(min, max) {
 window.onload = function () {
   let playerName = prompt("Enter your username");
   document.getElementById("player-name").innerHTML = playerName + " (YOU)";
+
+  localStorage.removeItem("high_score");
+  high_score_HTML.innerText = 0;
 }
 
 class Bird {
@@ -138,20 +141,7 @@ function start() {
 
   bird = new Bird(true);
 
-  let high_score =
-    localStorage.getItem("high_score") &&
-    JSON.parse(localStorage.getItem("high_score"));
-
-  if (high_score) {
-    if (score > high_score) {
-      high_score = score;
-      localStorage.setItem("high_score", JSON.stringify(score));
-    }
-  } else {
-    high_score = score;
-    localStorage.setItem("high_score", JSON.stringify(score));
-  }
-
+  let high_score = JSON.parse(localStorage.getItem("high_score")) || 0;
   high_score_HTML.innerText = high_score;
 
   pipes_HTML.innerHTML = '';
@@ -235,9 +225,16 @@ function handleGameOver() {
   playGameOverSound();
   alert("Game Over! Your score: " + score);
   document.getElementById("restart").style.display = 'block';
+
+  let high_score = JSON.parse(localStorage.getItem("high_score")) || 0;
+  if (score > high_score) {
+    high_score = score;
+    localStorage.setItem("high_score", JSON.stringify(high_score));
+    high_score_HTML.innerText = high_score;
+  }
 }
 
-restartBtn.addEventListener("click", () => {
+document.getElementById("restart").addEventListener("click", () => {
   bird.kill();
   start();
 });
